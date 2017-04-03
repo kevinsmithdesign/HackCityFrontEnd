@@ -5808,3 +5808,139 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=app.css.map */
+
+
+
+/* My CSS Starts */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  width:200px !important;
+}
+
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+header {
+  background:#181431;
+}
+
+/* nav background on mobile */
+nav {
+  background:#181431;
+}
+
+/* links */
+a {
+  color:;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #6159a5;
+  text-decoration:none;
+}
+
+
+
+/**********************************
+MEDIA QUERIES
+***********************************/
+
+
+
+
+
+
+@media screen and (min-width: 660px) {
+
+  /**********************************
+  HEADER
+  ***********************************/
+
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+
+  #logo {
+    margin-left:50px;
+  }
+
+
+
+  header {
+
+    margin-bottom: 60px;
+  }
+
+
+}

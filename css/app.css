@@ -5839,6 +5839,12 @@ header {
 
 #logo {
   width:200px !important;
+  margin-left:50px;
+}
+
+.resLogo {
+  width:200px;
+  display:none;
 }
 
 
@@ -5931,16 +5937,22 @@ MEDIA QUERIES
     width: 45%;
   }
 
-  #logo {
-    margin-left:50px;
-  }
-
-
-
   header {
-
     margin-bottom: 60px;
   }
+}
 
+@media screen and (max-width:659px){
+
+  #logo {
+    display:none;
+  }
+
+  .resLogo {
+    width:200px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
 
 }

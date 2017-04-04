@@ -5814,14 +5814,10 @@ button.close {
 /* My CSS Starts */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+
 }
 
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
+
 
 
 
@@ -5840,6 +5836,7 @@ header {
 #logo {
   width:200px !important;
   margin-left:50px;
+  margin-top:1px;
 }
 
 .resLogo {
@@ -5870,8 +5867,9 @@ nav li {
 }
 
 nav a {
-  font-weight: 800;
-  padding: 15px 10px;
+  font-family:helvetica;
+  font-weight: 600;
+  padding: 15px 20px;
 }
 
 
@@ -5900,6 +5898,11 @@ a {
   color:;
 }
 
+ul li {
+  position:relative;
+  top:-14px;
+}
+
 /* nav link */
 nav a, nav a:visited {
   color: #fff;
@@ -5911,14 +5914,50 @@ nav a.selected, nav a:hover {
   text-decoration:none;
 }
 
+/** Profile Page Starts **/
+
+#backgroundContainer {
+  background:#eff4f8;
+  height:300px;
+}
+
+.upload {
+  width:120px;
+  margin-left:70px;
+  margin-top:-30px;
+}
+
+#bioText {
+  margin-top:-200px;
+  margin-left:250px;
+  padding:5px;
+}
+
+/** Profile Page Ends **/
+
 
 
 /**********************************
 MEDIA QUERIES
 ***********************************/
 
+@media screen and (max-width: 767px){
+
+  #bioText {
+    margin-top:10px;
+    margin-left:80px;
+  }
+
+}
 
 
+@media screen and (max-width: 744px){
+
+  nav a {
+    font-size:12px;
+  }
+
+}
 
 
 
@@ -5948,6 +5987,10 @@ MEDIA QUERIES
     display:none;
   }
 
+  #backgroundContainer {
+    height:300px;
+  }
+
   .resLogo {
     width:200px;
     display:block;
@@ -5955,4 +5998,8 @@ MEDIA QUERIES
     margin-right:auto;
   }
 
+  .upload {
+    margin-top:-12px;
+
+  }
 }

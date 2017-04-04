@@ -11,7 +11,11 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+
+}
+
+
 
 article,
 aside,
@@ -4291,8 +4295,8 @@ a.badge:hover, a.badge:focus {
   cursor: pointer; }
 
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top:;
+  padding-bottom:;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee; }
@@ -5925,13 +5929,54 @@ nav a.selected, nav a:hover {
   width:120px;
   margin-left:70px;
   margin-top:-30px;
+
+}
+
+.uploadTwo {
+  display:none;
 }
 
 #bioText {
   margin-top:-200px;
   margin-left:250px;
   padding:5px;
+
 }
+
+#topSkills {
+   margin-top:110px;
+  background:transparent;
+  color:#999;
+  padding:10px;
+}
+
+.skillsTitle {
+  margin-left:20px;
+  width:90px;
+  position:relative;
+  top:130px;
+  left:-5px;
+  text-align:center;
+}
+
+figure {
+  display:inline-block;
+  margin-top:-20px;
+}
+
+  .jumboPadding {
+  margin-top:-20px;
+  margin-bottom:10px;
+  margin-right:20px;
+  margin-left:60px;
+}
+
+
+
+
+
+
+
 
 /** Profile Page Ends **/
 
@@ -5988,7 +6033,7 @@ MEDIA QUERIES
   }
 
   #backgroundContainer {
-    height:300px;
+    height:310px;
   }
 
   .resLogo {
@@ -5999,7 +6044,15 @@ MEDIA QUERIES
   }
 
   .upload {
-    margin-top:-12px;
+    display:none;
+  }
 
+  .uploadTwo {
+    display:block;
+    width:120px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top:-10px;
   }
 }

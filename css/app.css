@@ -15,8 +15,6 @@ body {
 
 }
 
-
-
 article,
 aside,
 details,
@@ -2914,21 +2912,22 @@ a.btn.disabled, fieldset[disabled] a.btn {
   pointer-events: none; }
 
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc; }
+  color: #fff;
+  background-color:#6159a5;
+  border-color: #6159a5;
+}
   .btn-default:focus, .btn-default.focus {
     color: #333;
     background-color: #e6e6e6;
     border-color: #8c8c8c; }
   .btn-default:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad; }
+    color: #fff;
+    background-color:transparent;
+    border-color: #fff; }
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad; }
+    color: #fff;
+    background-color:transparent;
+    border-color: #fff; }
     .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
       color: #333;
       background-color: #d4d4d4;
@@ -4734,7 +4733,7 @@ button.list-group-item-danger {
 
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f5f5f5;
+  background-color: #181431;
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px; }
@@ -4908,18 +4907,18 @@ button.list-group-item-danger {
       border-bottom: 1px solid #ddd; }
 
 .panel-default {
-  border-color: #ddd; }
+  border-color: none; }
   .panel-default > .panel-heading {
     color: #333333;
-    background-color: #f5f5f5;
-    border-color: #ddd; }
+    background-color:;
+    border-color: ; }
     .panel-default > .panel-heading + .panel-collapse > .panel-body {
       border-top-color: #ddd; }
     .panel-default > .panel-heading .badge {
       color: #f5f5f5;
       background-color: #333333; }
   .panel-default > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #ddd; }
+    border-bottom-color:; }
 
 .panel-primary {
   border-color: #337ab7; }
@@ -5821,10 +5820,9 @@ body {
 
 }
 
-
-
-
-
+button:focus,button:active {
+   outline: none !important;
+}
 
 /**********************************
 HEADING
@@ -5927,9 +5925,9 @@ nav a.selected, nav a:hover {
 
 .upload {
   width:120px;
-  margin-left:70px;
-  margin-top:-30px;
-
+  /* margin-left:70px; */
+  margin-top:-25px;
+  margin-left:-10px;
 }
 
 .uploadTwo {
@@ -5937,14 +5935,13 @@ nav a.selected, nav a:hover {
 }
 
 #bioText {
-  margin-top:-200px;
-  margin-left:250px;
+  margin-top:-125px;
   padding:5px;
 
 }
 
 #topSkills {
-   margin-top:110px;
+  margin-top:10px !important;
   background:transparent;
   color:#999;
   padding:10px;
@@ -5968,7 +5965,7 @@ figure {
   margin-top:-20px;
   margin-bottom:10px;
   margin-right:20px;
-  margin-left:60px;
+  margin-left:120px;
 }
 
 #projects {
@@ -5991,11 +5988,42 @@ figure {
 MEDIA QUERIES
 ***********************************/
 
+@media screen and (max-width: 991px){
+
+  #bioText {
+    margin-top:70px;
+    margin-left:-10px;
+  }
+
+  /* #topSkills {
+    margin-top:120px;
+  } */
+
+}
+
+
+
 @media screen and (max-width: 767px){
 
   #bioText {
-    margin-top:10px;
-    margin-left:80px;
+    /* margin-top:10px; */
+    margin-left:-25px;
+  }
+
+}
+
+@media screen and (max-width:765px){
+
+   #topSkills {
+    margin-top:140px;
+  }
+
+}
+
+@media screen and (max-width:761px){
+
+  #topSkills {
+    margin-top:160px;
   }
 
 }
@@ -6007,15 +6035,29 @@ MEDIA QUERIES
     font-size:12px;
   }
 
+  #topSkills {
+    margin-top:140px;
+  }
+
+}
+
+@media screen and (max-width:740px){
+
+}
+
+@media screen and (max-width:761px){
+
+  #topSkills {
+    margin-top:160px;
+  }
+
 }
 
 
 
-@media screen and (min-width: 660px) {
 
-  /**********************************
-  HEADER
-  ***********************************/
+
+@media screen and (min-width: 660px) {
 
   nav {
     background: none;
@@ -6029,6 +6071,14 @@ MEDIA QUERIES
   header {
     margin-bottom: 60px;
   }
+
+
+  #topSkills {
+    margin-top:140px;
+  }
+
+
+
 }
 
 @media screen and (max-width:659px){
@@ -6051,6 +6101,8 @@ MEDIA QUERIES
   .upload {
     display:none;
   }
+
+
 
   .uploadTwo {
     display:block;
